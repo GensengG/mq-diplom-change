@@ -1247,7 +1247,7 @@
 
       .another {
         box-sizing: border-box;
-        width: 300px;
+        max-width: 300px;
         margin: 0;
         padding-left: 25px;
         font-family: "OpenSans";
@@ -1288,7 +1288,7 @@
       }
 
       .field, .btn-subscribe {
-        width: 275px;
+        width: 240px;
         box-sizing: border-box;
         height: 49px;
         font-size: 14px;
@@ -1302,7 +1302,7 @@
       .btn-search {
         width: 49px;
         height: 49px;
-        margin-left: -52px;
+        margin-left: -49px;
       }
 
       .subscribe {
@@ -1499,7 +1499,7 @@
 
 }
 
-@media(orientation:landscape) and (max-width: 640px) {
+@media(orientation:landscape) and (max-width: 640px) and (min-width: 361px) {
 
   .currently {
     flex-wrap: wrap;
@@ -1778,10 +1778,22 @@
 
 }  
 
-@media(max-width: 365px) {
+@media(max-width: 360px) {
 
   .wrap, .social-wrap, .posts, .post, .another, .new-post, .section-header, .teg-list-container, .shop, .header-line {
-    max-width: 300px;
+    max-width: 320px;
+    font-size: 15px;
+  }
+
+  .wrap, .container {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 325px;
+  }
+
+  .shop {
+    margin: 0 auto;
   }
 
   .nav-list {
@@ -1791,36 +1803,73 @@
 
   .logo {
     margin: 0;
+    margin-left: 28px;
   }
 
   .list-item-link {
     font-size: 10px;
   }
 
+  .currently {
+    gap: 3px;
+  }
+
+  .currently-card {
+    min-height: 230px;
+  }
+
   .post-image {
-    width: 290px;
-    height: 255px;
+    width: 325px;
+    height: 256px;
     margin: 0;
+  }
+
+  .post-text {
+    font-size: 13px;
+    line-height: 19px;
   }
 
   .post-content::after {
     width: 150px;
+    margin-bottom: -26px;
+  }
+
+  .section-header::after {
+    margin-top: 7px;
+  }
+
+  .search {
+    margin-top: 68px;
+  }
+
+  .subscribe, .tags {
+    margin-top: 29px;
   }
 
   .field {
-    width: 250px;
+    max-width: 320px;
+    height: 54px;
   }
 
   .btn-search {
     margin-left: -22px;
+    margin-left: -50px;
   }
 
   .btn-subscribe {
-    width: 270px;
+    max-width: 320px;
   }
 
   .btn-feedback {
     max-width: 290px;
+  }
+
+  .teg-list-line {
+    font-size: 9px;
+  }
+
+  .shop-title {
+    font-size: 15px;
   }
 
   .shop-content {
@@ -1830,15 +1879,19 @@
 
   .product-photo {
     width: 280px;
-    height: 260px;
+    height: 280px;
     display: block;
     margin: 0 auto;
   }
 
   .product-content-outline {
-    margin-left: -5px;
-    margin-right: -7px;
-    padding: 16px 6px 21px 6px;
+    margin-left: -13px;
+    margin-right: -13px;
+    padding: 16px 16px 21px 16px;
+  }
+
+  .product-description {
+    line-height: 27px;
   }
   
   .popup-form {
@@ -1848,6 +1901,10 @@
 
   .visits, .offers, .pupap-btn-submit {
     width: 250px;
+  }
+
+  .social {
+    margin-top: -26px;
   }
 
 }

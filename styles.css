@@ -1247,9 +1247,9 @@
 
       .another {
         box-sizing: border-box;
-        max-width: 300px;
+        max-width: 290px;
         margin: 0;
-        padding-left: 25px;
+        padding-left: 10px;
         font-family: "OpenSans";
       }
       
@@ -1344,7 +1344,7 @@
       }
 
       .btn-feedback {
-        width: 277px;
+        width: 227px;
         margin-top: 10px;
       }
 
